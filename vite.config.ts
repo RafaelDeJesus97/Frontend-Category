@@ -25,7 +25,7 @@ export default defineConfig({
     optimizeDeps: {
         exclude: ['vuetify'],
         entries: ['./src/**/*.vue']
-    },
+    }
     // build: {
     //     rollupOptions: {
     //         treeshake:  false 
