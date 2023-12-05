@@ -4,7 +4,7 @@ import type { recentTrans, productPerformanceType, productsCards } from '@/types
 const recentTransaction: recentTrans[] = [
     {
         title: '09:30 am',
-        subtitle: 'Payment received from John Doe of $385.90',
+        subtitle: 'Pago recibido de Rafael Molina de $385.90',
         textcolor: 'primary',
         boldtext: false,
         line: true,
@@ -13,7 +13,7 @@ const recentTransaction: recentTrans[] = [
     },
     {
         title: '10:00 am',
-        subtitle: 'New sale recorded',
+        subtitle: 'Nueva venta registrada',
         textcolor: 'secondary',
         boldtext: true,
         line: true,
@@ -22,7 +22,7 @@ const recentTransaction: recentTrans[] = [
     },
     {
         title: '12:00 am',
-        subtitle: 'Payment was made of $64.95 to Michael',
+        subtitle: 'El pago se hizo de $64.95 a Juan Peñaloza',
         textcolor: 'success',
         boldtext: false,
         line: true,
@@ -31,7 +31,7 @@ const recentTransaction: recentTrans[] = [
     },
     {
         title: '09:30 am',
-        subtitle: 'New sale recorded',
+        subtitle: 'Nueva venta registrada',
         textcolor: 'warning',
         boldtext: true,
         line: true,
@@ -40,7 +40,7 @@ const recentTransaction: recentTrans[] = [
     },
     {
         title: '09:30 am',
-        subtitle: 'New arrival recorded',
+        subtitle: 'Nueva llegada registrada',
         textcolor: 'error',
         boldtext: true,
         line: true,
@@ -49,7 +49,7 @@ const recentTransaction: recentTrans[] = [
     },
     {
         title: '12:00 am',
-        subtitle: 'Payment Received',
+        subtitle: 'Pago recibido',
         textcolor: 'success',
         boldtext: false,
         line: false,
@@ -62,7 +62,7 @@ const recentTransaction: recentTrans[] = [
 const productPerformance: productPerformanceType[] = [
     {
         id: 1,
-        name: 'Sunil Joshi',
+        name: 'Alberto Tordecilla',
         post: 'Web Designer',
         pname: 'Elite Admin',
         status: 'Low',
@@ -71,7 +71,7 @@ const productPerformance: productPerformanceType[] = [
     },
     {
         id: 2,
-        name: 'Andrew McDownland',
+        name: 'Carlos Baute D.',
         post: 'Project Manager',
         pname: 'Real Homes WP Theme',
         status: 'Medium',
@@ -80,7 +80,7 @@ const productPerformance: productPerformanceType[] = [
     },
     {
         id: 3,
-        name: 'Christopher Jamil',
+        name: 'Melina Muñoz',
         post: 'Project Manager',
         pname: 'MedicalPro WP Theme',
         status: 'High',
@@ -89,7 +89,7 @@ const productPerformance: productPerformanceType[] = [
     },
     {
         id: 4,
-        name: 'Nirav Joshi',
+        name: 'Sebastian Osorio',
         post: 'Frontend Engineer',
         pname: 'Hosting Press HTML',
         status: 'Critical',
@@ -98,7 +98,7 @@ const productPerformance: productPerformanceType[] = [
     },
     {
         id: 5,
-        name: 'Tim Geroge',
+        name: 'Jorge Romero',
         post: 'Web Designer',
         pname: 'Hosting Press HTML',
         status: 'Critical',
@@ -131,7 +131,7 @@ const productsCard: productsCards[] = [
         rating: 5
     },
     {
-        title: 'Red Valvet Dress',
+        title: 'Vestido rojo con válvulas',
         link: '/',
         photo: proimg3,
         salesPrice: 150,
@@ -139,7 +139,7 @@ const productsCard: productsCards[] = [
         rating: 3
     },
     {
-        title: 'Cute Soft Teddybear',
+        title: 'Lindo osito de peluche suave',
         link: '/',
         photo: proimg4,
         salesPrice: 285,

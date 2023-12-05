@@ -66,7 +66,7 @@ const areaChart = {
     <v-card elevation="10" class="withbg">
         <v-card-item>
             <div class="d-flex align-center justify-space-between pt-sm-2">
-                <v-card-title class="text-h5">Product Sales</v-card-title>
+                <v-card-title class="text-h5">Venta de productos</v-card-title>
                 <v-btn  size="small" icon class="bg-error">
                     <v-avatar size="20" class="text-surface">
                         <CurrencyDollarIcon size="20" />
@@ -82,7 +82,7 @@ const areaChart = {
                                 <ArrowDownRightIcon class="text-error" size="15" />
                             </v-avatar>
                             <span class="text-subtitle-1 ml-2 font-weight-bold">+9%</span>
-                            <span class="text-subtitle-1 text-muted ml-2">last year</span>
+                            <span class="text-subtitle-1 text-muted ml-2">ultimo año</span>
                         </div>
                     </div>
                 </v-col>

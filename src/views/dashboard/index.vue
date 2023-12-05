@@ -15,23 +15,24 @@ import ProductCards from "@/components/dashboards/ProductCards.vue";
         </v-col>
         <v-col cols="12" sm="12" lg="4">
             <div class="mb-6">
-                <TrafficDistribution/>
+                <TrafficDistribution />
             </div>
             <div>
-                <ProductSales/>
+                <ProductSales />
             </div>
         </v-col>
         <v-col cols="12" sm="12" lg="4">
-            <UpcommingSchedule/>
+            <UpcommingSchedule />
         </v-col>
         <v-col cols="12" sm="12" lg="8">
-            <TopPayingClients/>
+            <TopPayingClients />
         </v-col>
         <v-col cols="12" sm="12" lg="12">
-            <ProductCards/>
+            <ProductCards />
         </v-col>
         <v-col class="text-center mt-2">
-            <p class="text-muted">Design and Developed by <a flat variant="text" href="https://www.wrappixel.com/" target="_blank" class="pl-1 text-primary">wrappixel.com</a></p>
+            <p class="text-muted">Design and Developed by <a flat variant="text" href="https://www.hicothea.com/"
+                    target="_blank" class="pl-1 text-primary">hicothea.com</a></p>
         </v-col>
     </v-row>
 </template>

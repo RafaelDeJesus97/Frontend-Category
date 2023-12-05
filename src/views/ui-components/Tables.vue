@@ -1,111 +1,66 @@
 <script setup>
-import { ref } from 'vue';
+
 import UiChildCard from '@/components/shared/UiChildCard.vue';
-const desserts = ref([
-    {
-        name: "Frozen Yogurt",
-        calories: 159,
-    },
-    {
-        name: "Ice cream sandwich",
-        calories: 237,
-    },
-    {
-        name: "Eclair",
-        calories: 262,
-    },
-    {
-        name: "Cupcake",
-        calories: 305,
-    },
-    {
-        name: "Gingerbread",
-        calories: 356,
-    },
-    {
-        name: "Jelly bean",
-        calories: 375,
-    },
-    {
-        name: "Lollipop",
-        calories: 392,
-    },
-    {
-        name: "Honeycomb",
-        calories: 408,
-    },
-    {
-        name: "Donut",
-        calories: 452,
-    },
-    {
-        name: "KitKat",
-        calories: 518,
-    },
-]);
+
+
 </script>
 
 <template>
     <v-row class="month-table">
-        <v-col cols="12" sm="12" >
-            <UiChildCard title="General Table">
+        <v-col cols="12" sm="12">
+            <UiChildCard title="Categorias">
                 <v-table>
                     <thead>
                         <tr>
-                            <th class="text-left">Name</th>
-                            <th class="text-left">Calories</th>
+                            <th class="text-left">Nombre</th>
+                            <th class="text-left">Stock</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr v-for="item in desserts" :key="item.name">
+                        <tr v-for="item in categories" :key="item.id">
                             <td>{{ item.name }}</td>
-                            <td>{{ item.calories }}</td>
+                            <td>{{ item.stock }}</td>
                         </tr>
                     </tbody>
                 </v-table>
 
-            </UiChildCard>
-        </v-col>
- 
-        <v-col cols="12" sm="12">
-            <UiChildCard title="Dark Table">
-                <v-table theme="dark">
-                    <thead>
-                        <tr>
-                            <th class="text-left">Name</th>
-                            <th class="text-left">Calories</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr v-for="item in desserts" :key="item.name">
-                            <td>{{ item.name }}</td>
-                            <td>{{ item.calories }}</td>
-                        </tr>
-                    </tbody>
-                </v-table>
-            </UiChildCard>
-        </v-col>
-
-        <v-col cols="12" sm="12">
-            <UiChildCard title="Header Fixed Table">
-                <v-table fixed-header height="300px">
-                    <thead>
-                        <tr>
-                            <th class="text-left">Name</th>
-                            <th class="text-left">Calories</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr v-for="item in desserts" :key="item.name">
-                            <td>{{ item.name }}</td>
-                            <td>{{ item.calories }}</td>
-                        </tr>
-                    </tbody>
-                </v-table>
             </UiChildCard>
         </v-col>
     </v-row>
-
-
-    
 </template>
+
+<script>
+
+export default {
+
+    data() {
+        return {
+            categories: []
+        }
+    },
+    async created() {
+        const base_url = "http://localhost:3005"
+
+        try {
+            const response = await fetch(`${base_url}/categories`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+
+            if (response.ok) {
+                const categories = await response.json();
+
+                console.log(categories);
+                this.categories = categories
+            }
+
+
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+}
+</script>

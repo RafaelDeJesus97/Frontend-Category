@@ -12,7 +12,7 @@ const items = ref([
         <v-card-item class="pa-6">
             <div class="d-flex align-center justify-space-between">
                 <div>
-                    <h5 class="text-h5 mb-1 font-weight-semibold">Top Paying Clients</h5>
+                    <h5 class="text-h5 mb-1 font-weight-semibold">Clientes que más pagan</h5>
                 </div>
                 <div>
                     <v-menu bottom left>
@@ -33,10 +33,10 @@ const items = ref([
             <thead>
                 <tr>
                     <th class="text-subtitle-1 font-weight-bold">Id</th>
-                    <th class="text-subtitle-1 font-weight-bold">Assigned</th>
-                    <th class="text-subtitle-1 font-weight-bold">Name</th>
-                    <th class="text-subtitle-1 font-weight-bold">Priority</th>
-                    <th class="text-subtitle-1 font-weight-bold text-right">Budget</th>
+                    <th class="text-subtitle-1 font-weight-bold">Asignado</th>
+                    <th class="text-subtitle-1 font-weight-bold">Nombre</th>
+                    <th class="text-subtitle-1 font-weight-bold">Prioridad</th>
+                    <th class="text-subtitle-1 font-weight-bold text-right">Presupuesto</th>
                 </tr>
             </thead>
             <tbody>
